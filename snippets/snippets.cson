@@ -1,0 +1,48 @@
+'.source.js':
+  'Meteor File Template JavaScript':
+    'prefix': 'meteorFileTemplateJs'
+    'body':
+      "/*jshint esversion: 6 */\n"+
+      "\n"+
+      "//imports\n"+
+      "import { Template } from 'meteor/templating';\n"+
+      "import './$1.html';\n"+
+      "\n"+
+      "//on created\n"+
+      "Template.$1.onCreated(() => {\n"+
+      "  const instance = Template.instance();\n"+
+      "});\n"+
+      "\n"+
+      "//on rendered\n"+
+      "Template.$1.onRendered(() => {\n"+
+      "  const instance = Template.instance();\n"+
+      "});\n"+
+      "\n"+
+      "//helpers\n"+
+      "Template.$1.helpers({\n"+
+      "  helper() {\n"+
+      "    const instance = Template.instance();\n"+
+      "    return 'help';\n"+
+      "  }\n"+
+      "});\n"+
+      "\n"+
+      "//events\n"+
+      "Template.$1.events({\n"+
+      "\n"+
+      "  //on click class\n"+
+      "  'click .className'(event, instance) {\n"+
+      "  }\n"+
+      "});\n"+
+      "\n"+
+      "//on destroyed\n"+
+      "Template.$1.onDestroyed(() => {\n"+
+      "  const instance = Template.instance();\n"+
+      "});\n"
+
+'.text.html.basic':
+  'Meteor File Template HTML':
+    'prefix': 'meteorFileTemplateHtml'
+    'body':
+      '<template name="$1">\n'+
+      '  {{helper}}\n'+
+      '</template>\n'

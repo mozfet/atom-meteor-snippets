@@ -1,0 +1,22 @@
+{
+  "name": "atom-meteor-file-snippets",
+  "version": "0.0.0",
+  "description": "File snippets for Meteor 1.4 ES6",
+  "engines": {"atom": ">=1.0.0 <2.0.0"},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mozfet/atom-meteor-snippets.git"
+  },
+  "keywords": [
+    "atom",
+    "meteor",
+    "es6",
+    "snippets"
+  ],
+  "author": "The Expert Box B.V.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mozfet/atom-meteor-snippets/issues"
+  },
+  "homepage": "https://github.com/mozfet/atom-meteor-snippets#readme"
+}
