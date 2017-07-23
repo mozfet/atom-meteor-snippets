@@ -40,8 +40,9 @@
       "});\n"
 
 '.source.js':
-  'meteor es6 jshint':  
-    "/*jshint esversion: 6 */"
+  'Meteor ES6 jshint':
+    'prefix': 'meteorJshintEs6'
+    'body': "/*jshint esversion: 6 */"
 
 '.text.html.basic':
   'Meteor File Template HTML':
