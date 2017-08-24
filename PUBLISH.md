@@ -2,4 +2,6 @@ http://flight-manual.atom.io/hacking-atom/sections/publishing/
 
 $ git add .
 $ git add commit -m 'message'
-$ apn publish major/minor/patch
+$ apm publish major/minor/patch
+$ git tag 'v1.0.3'
+$ git push && git push --tags
