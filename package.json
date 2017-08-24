@@ -1,6 +1,6 @@
 {
   "name": "atom-meteor-file-snippets",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "description": "File snippets for Meteor 1.4 ES6",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
