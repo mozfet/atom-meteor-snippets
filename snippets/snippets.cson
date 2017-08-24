@@ -48,6 +48,6 @@
   'Meteor File Template HTML':
     'prefix': 'meteorFileTemplateHtml'
     'body':
-      '<template name="$1">\n'+
-      '  {{helper}}\n'+
-      '</template>\n'
+      "<template name='$1'>\n"+
+      "  {{helper}}\n"+
+      "</template>\n"
