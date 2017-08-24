@@ -41,6 +41,9 @@
     'Meteor ES6 jshint':
       'prefix': 'meteorJshintEs6'
       'body': "/*jshint esversion: 6 */"
+    'Meteor Template Instance':
+      'prefix': 'meteor instance'
+      'body': 'const instance = Template.instance();'
 
 '.text.html.basic':
   'Meteor File Template HTML':
