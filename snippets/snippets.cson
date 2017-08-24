@@ -38,11 +38,9 @@
       "Template.$1.onDestroyed(() => {\n"+
       "  const instance = Template.instance();\n"+
       "});\n"
-
-'.source.js':
-  'Meteor ES6 jshint':
-    'prefix': 'meteorJshintEs6'
-    'body': "/*jshint esversion: 6 */"
+    'Meteor ES6 jshint':
+      'prefix': 'meteorJshintEs6'
+      'body': "/*jshint esversion: 6 */"
 
 '.text.html.basic':
   'Meteor File Template HTML':
