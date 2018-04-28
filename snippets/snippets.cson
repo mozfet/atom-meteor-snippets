@@ -1,24 +1,33 @@
 '.source.js':
+
+  'jshint ES6':
+    'prefix': 'ES6 jshint'
+    'body': "/* jshint esversion: 6 */"
+
+  'jsdoc function':
+    'prefix': 'jsdoc'
+    'body': "/**\n * $1\n * @param {$2} $3 - $4\n * @returns {$5} $6\n **/\n"
+
   'Meteor File Template JavaScript':
     'prefix': 'meteorFileTemplateJs'
     'body':
       "/*jshint esversion: 6 */\n"+
       "\n"+
-      "//imports\n"+
+      "// imports\n"+
       "import { Template } from 'meteor/templating';\n"+
       "import './$1.html';\n"+
       "\n"+
-      "//on created\n"+
+      "// on created\n"+
       "Template.$1.onCreated(() => {\n"+
       "  const instance = Template.instance();\n"+
       "});\n"+
       "\n"+
-      "//on rendered\n"+
+      "// on rendered\n"+
       "Template.$1.onRendered(() => {\n"+
       "  const instance = Template.instance();\n"+
       "});\n"+
       "\n"+
-      "//helpers\n"+
+      "// helpers\n"+
       "Template.$1.helpers({\n"+
       "  helper() {\n"+
       "    const instance = Template.instance();\n"+
@@ -26,7 +35,7 @@
       "  }\n"+
       "});\n"+
       "\n"+
-      "//events\n"+
+      "// events\n"+
       "Template.$1.events({\n"+
       "\n"+
       "  //on click class\n"+
@@ -34,23 +43,35 @@
       "  }\n"+
       "});\n"+
       "\n"+
-      "//on destroyed\n"+
+      "// on destroyed\n"+
       "Template.$1.onDestroyed(() => {\n"+
       "  const instance = Template.instance();\n"+
       "});\n"
-
-    'Meteor ES6 jshint':
-      'prefix': 'meteorJshintEs6'
-      'body': "/*jshint esversion: 6 */"
 
     'Meteor Template instance':
       'prefix': 'meteor instance'
       'body': "const instance = Template.instance();"
 
+    'meteor blaze template instance':
+      'prefix': 'instance'
+      'body': "const instance = Template.instance();"
+
+    'meteor import template':
+      'prefix': 'import template'
+      'body': "import { Template } from 'meteor/templating';"
+
+    'meteor import tracker':
+      'prefix': 'import tracker'
+      'body': "import { Tracker } from 'meteor/tracker';"
+
+    'meteor import reactive var':
+      'prefix': 'import reactive var'
+      'body': "import { Template } from 'meteor/reactive-var';"
+
 '.text.html.basic':
   'Meteor File Template HTML':
     'prefix': 'meteorFileTemplateHtml'
     'body':
-      "<template name='$1'>\n"+
+      "<template name=\"$1\">\n"+
       "  {{helper}}\n"+
       "</template>\n"
