@@ -48,6 +48,13 @@
       "  const instance = Template.instance();\n"+
       "});\n"
 
+  'Meteor ES6 index file':
+    'prefix': 'indexjs'
+    'body':
+      "/ *jshint esversion: 6 */\n"+
+      "\n"+
+      "import './$1.js';$2"
+
   'Meteor Template instance':
     'prefix': 'meteor instance'
     'body': "const instance = Template.instance();"
