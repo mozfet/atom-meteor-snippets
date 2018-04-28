@@ -48,25 +48,29 @@
       "  const instance = Template.instance();\n"+
       "});\n"
 
-    'Meteor Template instance':
-      'prefix': 'meteor instance'
-      'body': "const instance = Template.instance();"
+  'Meteor Template instance':
+    'prefix': 'meteor instance'
+    'body': "const instance = Template.instance();"
 
-    'meteor blaze template instance':
-      'prefix': 'instance'
-      'body': "const instance = Template.instance();"
+  'Meteor Blaze Template instance':
+    'prefix': 'instance'
+    'body': "const instance = Template.instance();"
 
-    'meteor import template':
-      'prefix': 'import template'
-      'body': "import { Template } from 'meteor/templating';"
+  'Meteor import template':
+    'prefix': 'import template'
+    'body': "import { Template } from 'meteor/templating';"
 
-    'meteor import tracker':
-      'prefix': 'import tracker'
-      'body': "import { Tracker } from 'meteor/tracker';"
+  'Meteor import tracker':
+    'prefix': 'import tracker'
+    'body': "import { Tracker } from 'meteor/tracker';"
 
-    'meteor import reactive var':
-      'prefix': 'import reactive var'
-      'body': "import { Template } from 'meteor/reactive-var';"
+  'Meteor import reactive var':
+    'prefix': 'import reactive var'
+    'body': "import { Template } from 'meteor/reactive-var';"
+
+  'Meteor import session':
+    'prefix': 'import session'
+    'body': "import { Session } from 'meteor/session';"
 
 '.text.html.basic':
   'Meteor File Template HTML':
