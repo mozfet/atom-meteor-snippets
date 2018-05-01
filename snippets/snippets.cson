@@ -14,6 +14,7 @@
       "/*jshint esversion: 6 */\n"+
       "\n"+
       "// imports\n"+
+      "import { Meteor } from 'meteor/meteor';\n"
       "import { Template } from 'meteor/templating';\n"+
       "import './$1.html';\n"+
       "\n"+
@@ -62,6 +63,10 @@
   'Meteor Blaze Template instance':
     'prefix': 'instance'
     'body': "const instance = Template.instance();"
+
+  'Meteor import meteor':
+    'prefix': 'import template'
+    'body': "import { Meteor } from 'meteor/meteor';"
 
   'Meteor import template':
     'prefix': 'import template'
