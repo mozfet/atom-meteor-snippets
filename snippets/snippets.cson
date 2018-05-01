@@ -14,7 +14,7 @@
       "/*jshint esversion: 6 */\n"+
       "\n"+
       "// imports\n"+
-      "import { Meteor } from 'meteor/meteor';\n"
+      "import { Meteor } from 'meteor/meteor';\n"+
       "import { Template } from 'meteor/templating';\n"+
       "import './$1.html';\n"+
       "\n"+
