@@ -79,6 +79,10 @@
     'prefix': 'import session'
     'body': "import { Session } from 'meteor/session';"
 
+  'Meteor import check':
+    'prefix': 'import check'
+    'body': "import { check, Match } from 'meteor/check';"
+
 '.text.html.basic':
   'Meteor File Template HTML':
     'prefix': 'meteorFileTemplateHtml'
