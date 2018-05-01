@@ -78,7 +78,7 @@
 
   'Meteor import reactive var':
     'prefix': 'import reactive var'
-    'body': "import { Template } from 'meteor/reactive-var';"
+    'body': "import { ReactiveVar } from 'meteor/reactive-var';"
 
   'Meteor import session':
     'prefix': 'import session'
