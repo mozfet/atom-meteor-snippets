@@ -65,7 +65,7 @@
     'body': "const instance = Template.instance();"
 
   'Meteor import meteor':
-    'prefix': 'import template'
+    'prefix': 'import meteor'
     'body': "import { Meteor } from 'meteor/meteor';"
 
   'Meteor import template':
