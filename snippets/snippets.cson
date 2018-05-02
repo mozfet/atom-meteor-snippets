@@ -52,7 +52,7 @@
   'Meteor ES6 index file':
     'prefix': 'indexjs'
     'body':
-      "/ *jshint esversion: 6 */\n"+
+      "/* jshint esversion: 6 */\n"+
       "\n"+
       "import './$1.js';$2"
 
