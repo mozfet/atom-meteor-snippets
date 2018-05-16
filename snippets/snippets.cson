@@ -1,9 +1,5 @@
 '.source.js':
 
-  'jshint ES6':
-    'prefix': 'ES6 jshint'
-    'body': "/* jshint esversion: 6 */"
-
   'jsdoc function':
     'prefix': 'jsdoc'
     'body': "/**\n * $1\n * @param {$2} $3 - $4\n * @returns {$5} $6\n **/\n"
@@ -11,30 +7,28 @@
   'Meteor File Template JavaScript':
     'prefix': 'meteorFileTemplateJs'
     'body':
-      "/*jshint esversion: 6 */\n"+
-      "\n"+
       "// imports\n"+
-      "import { Meteor } from 'meteor/meteor';\n"+
-      "import { Template } from 'meteor/templating';\n"+
-      "import './$1.html';\n"+
+      "import { Meteor } from 'meteor/meteor'\n"+
+      "import { Template } from 'meteor/templating'\n"+
+      "import './$1.html'\n"+
       "\n"+
       "// on created\n"+
       "Template.$1.onCreated(() => {\n"+
-      "  const instance = Template.instance();\n"+
-      "});\n"+
+      "  const instance = Template.instance()\n"+
+      "})\n"+
       "\n"+
       "// on rendered\n"+
       "Template.$1.onRendered(() => {\n"+
-      "  const instance = Template.instance();\n"+
-      "});\n"+
+      "  const instance = Template.instance()\n"+
+      "})\n"+
       "\n"+
       "// helpers\n"+
       "Template.$1.helpers({\n"+
       "  helper() {\n"+
       "    const instance = Template.instance();\n"+
-      "    return 'help';\n"+
+      "    return 'help'\n"+
       "  }\n"+
-      "});\n"+
+      "})\n"+
       "\n"+
       "// events\n"+
       "Template.$1.events({\n"+
@@ -42,19 +36,17 @@
       "  //on click class\n"+
       "  'click .className'(event, instance) {\n"+
       "  }\n"+
-      "});\n"+
+      "})\n"+
       "\n"+
       "// on destroyed\n"+
       "Template.$1.onDestroyed(() => {\n"+
       "  const instance = Template.instance();\n"+
-      "});\n"
+      "})\n"
 
-  'Meteor ES6 index file':
-    'prefix': 'indexjs'
-    'body':
-      "/* jshint esversion: 6 */\n"+
-      "\n"+
-      "import './$1.js';$2"
+  'Meteor Template onCreated':
+    'prefix': 'template onCreated'
+    'body': "Template.$1.onCreated(() => {\n"+
+      "$2\n})"
 
   'Meteor Template instance':
     'prefix': 'meteor instance'
