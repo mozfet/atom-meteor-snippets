@@ -50,35 +50,35 @@
 
   'Meteor Template instance':
     'prefix': 'meteor instance'
-    'body': "const instance = Template.instance();"
+    'body': "const instance = Template.instance()"
 
   'Meteor Blaze Template instance':
     'prefix': 'instance'
-    'body': "const instance = Template.instance();"
+    'body': "const instance = Template.instance()"
 
   'Meteor import meteor':
     'prefix': 'import meteor'
-    'body': "import { Meteor } from 'meteor/meteor';"
+    'body': "import { Meteor } from 'meteor/meteor'"
 
   'Meteor import template':
     'prefix': 'import template'
-    'body': "import { Template } from 'meteor/templating';"
+    'body': "import { Template } from 'meteor/templating'"
 
   'Meteor import tracker':
     'prefix': 'import tracker'
-    'body': "import { Tracker } from 'meteor/tracker';"
+    'body': "import { Tracker } from 'meteor/tracker'"
 
   'Meteor import reactive var':
     'prefix': 'import reactive var'
-    'body': "import { ReactiveVar } from 'meteor/reactive-var';"
+    'body': "import { ReactiveVar } from 'meteor/reactive-var'"
 
   'Meteor import session':
     'prefix': 'import session'
-    'body': "import { Session } from 'meteor/session';"
+    'body': "import { Session } from 'meteor/session'"
 
   'Meteor import check':
     'prefix': 'import check'
-    'body': "import { check, Match } from 'meteor/check';"
+    'body': "import { check, Match } from 'meteor/check'"
 
 '.text.html.basic':
   'Meteor File Template HTML':
