@@ -25,7 +25,7 @@
       "// helpers\n"+
       "Template.$1.helpers({\n"+
       "  helper() {\n"+
-      "    const instance = Template.instance();\n"+
+      "    const instance = Template.instance()\n"+
       "    return 'help'\n"+
       "  }\n"+
       "})\n"+
@@ -40,7 +40,7 @@
       "\n"+
       "// on destroyed\n"+
       "Template.$1.onDestroyed(() => {\n"+
-      "  const instance = Template.instance();\n"+
+      "  const instance = Template.instance()\n"+
       "})\n"
 
   'Meteor Template onCreated':
@@ -52,9 +52,52 @@
     'prefix': 'meteor instance'
     'body': "const instance = Template.instance()"
 
-  'Meteor Blaze Template instance':
-    'prefix': 'instance'
-    'body': "const instance = Template.instance()"
+  'Meteor Collection Allow':
+    'prefix': 'allow'
+    'body': "/**\n"+
+            "* Client side access rules for collection $1\n"+
+            "**/\n"+
+            "$1.allow({\n"+
+            "  insert(userId, doc) {\n"+
+            "    return false\n"+
+            "  },\n"+
+            "  update(userId, doc, fieldNames, modifier) {\n"+
+            "    return false\n"+
+            "  },\n"+
+            "  remove(userId, doc) {\n"+
+            "    return false\n"+
+            "  }\n"+
+            "})"
+
+  'Meteor Template onDestroyed':
+    'prefix': 'template onDestroyed'
+    'body': "Template.$1.onDestroyed(() => {\n"+
+            "  const instance = Template.instance()\n"+
+            "})"
+
+  'Meteor Template onRendered':
+    'prefix': 'template onRendered'
+    'body': "Template.$1.onRendered(() => {\n"+
+            "  const instance = Template.instance()\n"+
+            "})"
+
+  'Meteor Template helpers':
+    'prefix': 'template helpers'
+    'body': "Template.$1.helpers({\n"+
+            "  $2() {\n"+
+            "    const instance = Template.instance()\n"+
+            "    $3\n"+
+            "  }\n"+
+            "})"
+
+  'Meteor Template events':
+    'prefix': 'template events'
+    'body': "Template.$1.events({\n"+
+            "  'click .$2'(event) {\n"+
+            "    const instance = Template.instance()\n"+
+            "    $3\n"+
+            "  }\n"+
+            "})"
 
   'Meteor import meteor':
     'prefix': 'import meteor'
@@ -79,6 +122,14 @@
   'Meteor import check':
     'prefix': 'import check'
     'body': "import { check, Match } from 'meteor/check'"
+
+  'Import ReactiveArray':
+    'prefix': 'import reactive array'
+    'body': "import { ReactiveArray } from 'meteor/manuel:reactivearray'"
+
+  'Import Blaze':
+    'prefix': 'import blaze'
+    'body': "import { Blaze } from 'meteor/blaze'"
 
 '.text.html.basic':
   'Meteor File Template HTML':
